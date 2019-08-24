@@ -4,7 +4,7 @@ This repository is `TensorFlow 2.0` tutorial and examples.
 
 ## Requirements
 
-- Tensorflow 2.0
+- Tensorflow 2.0.0
 - Jupyter Notebook
 
 You can just install TensorFlow 2.0 with `pip` (as shown below ), or you can use a [docker image](#docker-image) that we already made.
@@ -66,7 +66,7 @@ $ docker run -it - kakalin/kimage:cpu-mconda-py36-tf200
 ```
 
 ```bash
-$ docker run -it -p 8888:8888 -v ~/tensorflow2-tutorials:/root/tensorflow2-tutorials kakalin/kimage:cpu-mconda-py36-tf200
+$ docker run -it -p 8888:8888 -v ~/tensorflow2-tutorials/:/root/tensorflow2-tutorials kakalin/kimage:cpu-mconda-py36-tf200
 ```
 
 #### In container
