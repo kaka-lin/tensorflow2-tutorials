@@ -62,7 +62,7 @@ You need to mount directory into container and publish a container's port to the
 #### Example
 
 ```bash
-$ docker run -it - kakalin/kimage:cpu-mconda-py36-tf200
+$ docker run -it kakalin/kimage:cpu-mconda-py36-tf200
 ```
 
 ```bash
