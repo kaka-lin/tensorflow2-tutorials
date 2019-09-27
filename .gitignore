@@ -8,8 +8,11 @@
 # Jupyter
 .ipynb_checkpoints
 
-# tensorboard
-logs/
-
 # model
 models/
+
+## Tensorflow
+# tensorboard
+logs/
+# TFRecord
+*.tfrecord
