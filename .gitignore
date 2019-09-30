@@ -16,3 +16,6 @@ models/
 logs/
 # TFRecord
 *.tfrecord
+
+keras/03_classification_structured_data.ipynb
+keras/imgs/
