@@ -2,75 +2,35 @@
 
 This repository is `TensorFlow 2.0` tutorial and examples.
 
-## Requirements
+## Get Start
 
-- Tensorflow 2.0.0
-- Jupyter Notebook
-
-You can just install TensorFlow 2.0 with `pip` (as shown below ), or you can use a [docker image](#docker-image) that we already made.
+You can just install TensorFlow 2.0 with `pip` (as shown below ), or you can use a [docker image](https://github.com/kaka-lin/tensorflow2-tutorials/tree/master/document/docker_image.md) that we already made.
 
 ```bash
 $ pip install -r requirements.txt
+
+# Clone this repository
+$ git clone https://github.com/kaka-lin/tensorflow2-tutorials.git
+
+# Run Jupyter Notebook in your local directory
+$ jupyter notebook
 ```
+## Examples
 
-## Start
+### Beginner quickstart
 
-1. clone this repository
+- [The Basic - Training Your First Model](https://github.com/kaka-lin/tensorflow2-tutorials/blob/master/keras/00_the_basics_training_first_model.ipynb)
 
-    ```bash
-    $ git clone https://github.com/kaka-lin/tensorflow2-tutorials.git
-    ```
+### Keras (tf.Keras)
 
-2. Run Jupyter Notebook
-    
-    In your local directory
+- [Image Classification - MNIST](https://github.com/kaka-lin/tensorflow2-tutorials/blob/master/keras/01_classification_mnist.ipynb)
 
-    ```bash
-    $ jupyter notebook
-    ```
+- [Text Classification - IMDB](https://github.com/kaka-lin/tensorflow2-tutorials/blob/master/keras/02_classification_imdb.ipynb)
 
----
+- [Build models with `subclassing`](https://github.com/kaka-lin/tensorflow2-tutorials/blob/master/keras/01_classification_mnist_model_subclassing.ipynb)
 
-<span id="docker-image"></span>
-## Docker image
+### Data input pipeline (tf.data)
 
-We have already made a docker image for this repository.
-If you want to build yourself docker image or get information about this image, you can refer [here](https://github.com/kaka-lin/docker-image).
+- Load and preprocess data
 
-### Download docker image
-
-```bash
-$ docker pull kakalin/kimage:cpu-mconda-py36-tf200
-```
-
-### Running a container
-
-You need to mount directory into container and publish a container's port to the host.
-
-- mount directory: 
-
-    ```bash
-    -v <localhost_directory>:<container_path>
-    ```
-
-- publish port:
-
-    ```bash
-    -p xxxx:8888 # xxxx can be any port(s), ex: 8888 or 7777 
-    ```
-
-#### Example
-
-```bash
-$ docker run -it kakalin/kimage:cpu-mconda-py36-tf200
-```
-
-```bash
-$ docker run -it -p 8888:8888 -v ~/tensorflow2-tutorials/:/root/tensorflow2-tutorials kakalin/kimage:cpu-mconda-py36-tf200
-```
-
-#### In container
-
-```bash
-$ jupyter notebook --allow-root --no-browser --ip="*"
-```
+    - [TFRecord and tf.Example](https://github.com/kaka-lin/tensorflow2-tutorials/tree/master/data/load_and_preprocess_data/tfrecords)
