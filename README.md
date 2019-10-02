@@ -15,6 +15,12 @@ $ git clone https://github.com/kaka-lin/tensorflow2-tutorials.git
 # Run Jupyter Notebook in your local directory
 $ jupyter notebook
 ```
+### [Option] Tensorflow GPU Version
+
+If you want to install `tensorflow-gpu`, you need to have `NVIDIA® GPU card with CUDA® Compute Capability 3.5 or higher`.
+
+- Install [NVIDIA driver, CUDA Toolkit and cuDNN SDK](https://github.com/kaka-lin/tensorflow2-tutorials/tree/master/document/nvidia.md).
+
 ## Examples
 
 ### Beginner quickstart
